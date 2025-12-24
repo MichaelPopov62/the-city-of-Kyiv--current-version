@@ -1,3 +1,6 @@
+
+/*анімаціі */
+
 @keyframes slide {
   from {
     transform: translateX(-140%) translateY(-50%);
