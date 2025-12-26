@@ -6,6 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/the-city-of-kyiv--current-version/', 
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
