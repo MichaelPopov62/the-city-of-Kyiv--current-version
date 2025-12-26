@@ -8,7 +8,7 @@
       rgba(125, 218, 32, 0.3),
       rgba(83, 119, 59, 0.3)
     ),
-    url(./img/kiiv.jpg);
+    url(../img/kiiv.jpg);
   width: 100%;
   /* overflow-x: clip; */
   background-repeat: no-repeat;
