@@ -1,4 +1,9 @@
 /*базові стилі*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
@@ -24,10 +29,21 @@ body {
   min-width: 100vw;/*ширина вікна браузера в px*/
   min-height: 100vh;/*висота вікна браузера в px*/
   margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
+
 main {
+
   flex-grow: 1;
+
 }
 main:has(.back-link) {
   text-align: center;

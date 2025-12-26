@@ -1,0 +1,99 @@
+
+.desc {
+  background-color: #b9ea33;
+}
+.container {
+  margin: 0 auto;
+}
+.text {
+  padding: 0 15px;
+}
+
+.desc-content {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform:none ;
+    text-align: justify;
+  line-height: 1.5;
+  text-indent: 30px;
+  padding-top: 15px;
+  flex-grow: 1;
+    overflow-wrap: break-word;
+  word-wrap: break-word;
+
+}
+.name,
+.adverd {
+  font-size: 30px;
+  font-family: serif;
+  color: blue;
+   }
+   .adverd {
+  display: inline-block;
+   white-space: nowrap;   /* слова не розбиваються на два рядки */
+     text-transform: uppercase; /* якщо треба капсом */
+  text-align: left; /* або center, якщо треба */
+   letter-spacing: 0.04em;    /* опціонально */
+}
+.list {
+  padding: 0 15px;
+}
+.list-title {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #180a72;
+  padding-top: 15px;
+}
+.districts {
+  display: flex;
+flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-top: 15px;
+}
+.districts-item {
+ width: 100%;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  width: auto;
+  text-align: center;
+}
+/*=======tablet========*/
+@media screen and (min-width: 768px) {
+  .districts {
+   flex-direction: row;
+  flex-wrap: wrap;
+  gap:30px;
+  justify-content: center;
+
+}
+  .districts-item{
+    width: calc((100% - 4 * 5px) / 5);
+    font-weight: 600;
+  }
+  }
+  /*======desktop=========*/
+@media screen and (min-width: 1200px) {
+  .districts {
+   flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+}
+  .districts-item{
+    width: calc((100% - 4 * 40px) / 5);
+    font-weight: 600;
+  }
+  }
+
+
+
+
+

@@ -19,7 +19,7 @@
 .heder-nav {
   display: flex;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 20px;
   justify-content: space-between;
 }
 .logo {

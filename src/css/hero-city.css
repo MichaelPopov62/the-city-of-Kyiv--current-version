@@ -1,0 +1,105 @@
+.container{
+  width: 100%;
+}
+.hero-city {
+  background-color: #b9ea33;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(125, 218, 32, 0.3),
+      rgba(83, 119, 59, 0.3)
+    ),
+    url(./img/kiiv.jpg);
+  width: 100%;
+  /* overflow-x: clip; */
+  background-repeat: no-repeat;
+  background-position:center top;
+  background-size: cover;
+  min-height: 500px;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+.container {
+  padding: 0 16px;
+}
+.hero-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  position: relative;
+  font-size: 30px;
+  color: #180a72;
+  font-weight: 700;
+  padding-top: 150px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 64px;
+  text-align: center;
+  transition: transform 300ms ease;
+}
+/*без позиции расположение- вертикально,
+с позіцією горизонтально-розміри,
+задаються при горізонтальному розсташуванні*/
+/* .title:hover::before {
+  position: absolute;
+  content: "";
+  width: 450px;
+  top: 150px;
+  border: 5px solid #030859;
+  border: 5px solid #fae608;
+  cursor: pointer;
+} */
+.title:hover {
+  color: #f9dc1f;
+    transform: scale(1.1);
+  cursor: pointer;
+}
+
+.symbol {
+  box-shadow: 15px 5px 90px 40px rgb(219, 227, 67);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+.bnt-title {
+  border-radius: 8px;
+  border-color: #b9ea33;
+  background-color: #c36e3d;
+  color: #0c0c0c;
+}
+.button-gat {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  bottom: 10px;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  font-size: 5px;
+  text-align: center;
+
+  border: 3px solid #14115b;
+  border-radius: 50%;
+  background-color: #a5ca2a;
+  font-weight: 600;
+}
+/*=====tablet========*/
+@media screen and (min-width: 768px){
+  .title{padding-top: 200px;}
+  .button-gat{
+  right: 20px;
+}
+}
+/*======desktop========*/
+@media screen and ( min-width: 1200px) {
+
+.button-gat{
+  right: 40px;
+}
+}
+

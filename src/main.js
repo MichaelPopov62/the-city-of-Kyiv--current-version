@@ -7,11 +7,11 @@ import './css/header.css';
 import './css/reset.css';
 import './css/base.css';
 import './css/container.css';
-import './css/header.css';
 import './css/footer.css';
 import './css/animations.css';
 import './css/badges.css';
 import './css/back-link.css';
-import './css/vite-promo.css';
+import './css/hero-city.css';
+import './css/desc.css';
 
 
