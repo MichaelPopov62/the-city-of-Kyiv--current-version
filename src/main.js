@@ -1,5 +1,5 @@
-import './js/modal.js';
-import './js/menu.js';
+import'./js/mobile-menu.js';
+
 
 import './css/styles.css';
 import './css/header.css';
