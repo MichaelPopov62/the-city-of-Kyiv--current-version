@@ -8,7 +8,7 @@
       rgba(125, 218, 32, 0.3),
       rgba(83, 119, 59, 0.3)
     ),
-    url(../img/kiiv.jpg);
+    url(/img/kiiv.jpg);
   width: 100%;
   /* overflow-x: clip; */
   background-repeat: no-repeat;
@@ -66,12 +66,42 @@
   align-items: center;
   justify-content: center;
 }
-.bnt-title {
+.question-form {
+  display: none;
+}
+
+.question-form--visible {
+  display: block;
+}
+.question-form label {
+  display: block;
+  margin-bottom: 6px; /* відступ від тексту до textarea */
+  font-weight: bold;
+  color: #14115b;
+}
+
+.question-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 80px;
+  margin-bottom: 12px;
+}
+
+.form-status {
+  color: rgb(43, 154, 223);
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+
+.btn-title {
+
   border-radius: 8px;
   border-color: #b9ea33;
-  background-color: #c36e3d;
-  color: #0c0c0c;
+  background-color: rgb(43, 154, 223);
+  color: #14115b;
 }
+
 .button-gat {
   position: fixed;
   bottom: 50px;

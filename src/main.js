@@ -1,4 +1,8 @@
 import'./js/mobile-menu.js';
+import './js/header.js'
+import'./js/hero-city.js'
+import'./js/hero-form.js';
+
 
 
 import './css/styles.css';
