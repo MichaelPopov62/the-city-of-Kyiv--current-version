@@ -1,0 +1,124 @@
+/**monuments**/
+/*щоб фото були гумові треба в глобальних стилях додати на них displey:block і також max-width-100% */
+.monuments {
+  /* display: none; */
+  background-color: #b9ea33;
+  padding-bottom: 36px;
+}
+.monuments-places {
+  font-family: sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: #180a72;
+  padding-top: 15px;
+}
+
+.monuments-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-left: 31px;
+  padding-right: 31px;
+  justify-content: center;
+}
+.monuments-item{
+  margin-bottom: 16px;
+}
+
+/* вспливающее окно */
+.box {
+  position: relative;
+  height: 297px;
+  overflow: hidden;
+
+}
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 4px solid #220661;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 5;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #220661;
+  transform: translatey(100%);
+  transition: transform 250ms;
+
+
+}
+.overlay > img {
+  width: 100% ;
+  height: 100% ;
+  object-fit: cover; /* щоб картинка заповнювала весь блок */
+  display: block;    /* прибирає відступи навколо img */
+}
+
+.box:hover .overlay {
+  transform: translatey(0);
+}
+/* окончание вспливающего окна */
+
+.monuments-picture {
+   display: block;
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.monuments-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 15px;
+  color: #180a72;
+
+
+}
+
+.monuments-text {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  padding-top: 10px;
+    max-width: 90%;
+  margin: 8px auto 0;
+  color: #180a72;
+}
+/*====table====*/
+@media screen and (min-width:768px ) {
+  .monuments-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px 21px;
+    justify-content: center;
+}
+  .monuments-item {
+    width: calc((100% - 21px) / 2);
+    display: flex;
+    flex-direction: column;
+
+
+}
+/* вспливающее окно */
+  .box {
+    position: relative;
+    width: 100%;
+    height: 297px;
+    overflow: hidden;
+}
+  .overlay {
+    z-index: 2;
+}
+  .box:hover .overlay {
+    transform: translatey(0);
+}
+}
