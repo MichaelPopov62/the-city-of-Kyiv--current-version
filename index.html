@@ -20,13 +20,11 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/the-city-of-kyiv--current-version/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/the-city-of-kyiv--current-version/assets/vendor-CAXQE2hQ.js">
-    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/vendor-C3QZVnZz.css">
-    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/index-Bql9AZGA.css">
-    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/styles-BFXYr18A.css">
+    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/index-C3LpmeIh.css">
+    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/styles-COGWodOV.css">
   </head>
   <body>
-    
+      
 
 
  <header class="pade-heder">
@@ -119,7 +117,7 @@
            <!-- кнопка фіксована до низу вьюпорта -->
       <form >
         <button type="button" class="button-gat">
-          <svg class="arrow" width="32" height="32" viewBox="0 0 32 32">
+          <svg class="arrow" width="24" height="24" viewBox="0 0 32 32">
             <path fill="blue" d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"></path>
           </svg>
         </button>
@@ -135,19 +133,32 @@
                 src="/the-city-of-kyiv--current-version/img/герб.jpg"
                 width="50" height="60"
                 alt="герб страни"/>
+              <button id="open-question" class="btn-title"            type="button">Задай питання
+              </button>
 
-              <form class="question-form" action="#" method="post">
-                  <label for="question-text">Ваше питання </label>
-                    <textarea id="question-text" name="question" required></textarea>
 
-                  <button class="btn-title" type="submit">надіслати</button>
-                   <p class="form-status"></p>
-              </form>
-              <button  id="open-question" class="btn-title" type="button">Задай питання</button>
             </div>
         </div>
       </section>
-         <section class="desc">
+      <div class="modal" id="question-modal">
+  <div class="modal-content">
+    <button class="modal-close" type="button">×</button>
+    <form id="question-form" class="question-form" action="#" method="post">
+      <p class="form-hint">Для зворотнього зв'язку залиште свій телефон або email</p>
+
+      <label for="question-text">Ваше питання</label>
+      <textarea id="question-text" name="question" required></textarea>
+
+      <label for="contact">Телефон або email (необов'язково)</label>
+      <input type="text" id="contact" name="contact" placeholder="Наприклад: email@example.com">
+
+      <button class="btn-title" type="submit">надіслати</button>
+      <p class="form-status"></p>
+    </form>
+  </div>
+</div>
+
+        <section class="desc">
         <div class="container">
         <div class="text">
           <p class="desc-content">
@@ -178,7 +189,7 @@
         </div>
       </div>
       </section>
-             <!-- monuments -->
+           <!-- monuments -->
         <section class="monuments" >
           <h3 class="monuments-places">Цікаві місця</h3>
           <div class="container">
@@ -361,7 +372,7 @@
         </div>
       </section>
 
-          <section class="coordinates">
+        <section class="coordinates">
         <div class="container">
           <h2 class="coordinates-power" id="органивлади">Органи влади</h2>
           <p class="coordinates-street">
@@ -414,9 +425,7 @@
   </nav>
 </div>
 
-    
-
-    <footer class="footer">
+      <footer class="footer">
   <div class="container">
     <p class="footer-desc">
     Ліза тут
