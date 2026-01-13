@@ -34,6 +34,18 @@
   font-family:sans-serif;
   font-size: 16px;
 }
+.basicLightbox__placeholder {
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-map {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
 @media screen and (min-width: 768px){
   .tumb {
      flex-direction: row;

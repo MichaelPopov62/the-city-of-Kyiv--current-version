@@ -5,6 +5,7 @@ import'./js/hero-city.js'
 import'./js/hero-form.js';
 import'./js/monuments.js';
 import'./js/question-form.js';
+import'./js/coordinates.js';
 // import'./js/desc.js';
 // import'./js/back-link.js';
 
