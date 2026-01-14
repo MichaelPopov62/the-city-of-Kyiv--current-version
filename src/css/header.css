@@ -34,19 +34,36 @@
   margin-left: 20px;
   justify-content: space-between;
 }
-.logo {
-  font-weight: 100;
-  letter-spacing: normal;
-  font-size: 20px;
-  line-height: 16px;
-  text-transform: capitalize;
+.logo-img {
+  display: block;
+ animation: stretch 0.8s ease-out forwards;
+ transition: transform 0.3s ease, filter 0.3s ease; /* плавное увеличение при hover */
   border: #434455;
   border-radius: 10px;
   box-shadow: 2px 2px 4px blue, 16px 16px 20px rgb(234, 201, 16);
   cursor: pointer;
 }
-.logo:hover {
-  box-shadow: 2px 2px 4px rgb(73, 73, 137);
+.logo-link {
+  display: inline-block;
+  position: relative;
+
+}
+
+@keyframes stretch {
+  from {
+    opacity: 0;
+    transform:   scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform:  scale(1);
+  }
+}
+
+
+.logo-img:hover {
+    transform:  scale(1.2);
+  filter: brightness(1.2);
 }
 
 .wrapper-icon {
@@ -166,6 +183,7 @@
   opacity: 0;
   transform: translateY(12px);}
 
+/*анимація*/
   .mobile-menu.is-open .nav-item {
   animation: fadeUp 0.4s ease forwards;
 }

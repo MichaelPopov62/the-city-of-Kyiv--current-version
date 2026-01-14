@@ -40,6 +40,15 @@
   margin-top: 8px;
   font-size: 14px;
 }
+.form-status.error {
+  color: red;
+  font-weight: 400;
+}
+
+.form-status.success {
+  color: green;
+  font-weight: 700;
+}
 
 
 
