@@ -6,6 +6,7 @@ import'./js/hero-form.js';
 import'./js/monuments.js';
 import'./js/question-form.js';
 import'./js/coordinates.js';
+import'./js/footer.js';
 
 
 

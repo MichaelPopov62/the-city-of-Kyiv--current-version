@@ -59,8 +59,6 @@
     transform:  scale(1);
   }
 }
-
-
 .logo-img:hover {
     transform:  scale(1.2);
   filter: brightness(1.2);
@@ -84,19 +82,23 @@
   justify-content: flex-end;
   gap:12px;
 }
-.social-link {
-  width: 24px;
+.header-social-item{
+    width: 24px;
   height: 24px;
-  background-color: #2135e8;   /* фон */
   border-radius: 50%;          /* коло */
-  display: flex;
+
+}
+.social-link {
+
+ display: inline-flex;
+   line-height: 1;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
 }
 .icon-social{
-  fill:#030859;
-
+ fill: #fff;
+  transition: fill 0.3s ease;
 }
 /*навігація*/
 .nav-list {
